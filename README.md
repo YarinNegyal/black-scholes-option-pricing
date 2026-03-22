@@ -45,35 +45,35 @@ where $N(\cdot)$ is the cumulative standard normal distribution.
 ## Key Results
 
 ### Monte Carlo Convergence
-![Convergence](images/convergence.png)
+![Convergence](convergence.png)
 
 With only 10-100 simulated paths the Monte Carlo estimate is noisy 
 and unreliable. By 100,000 paths it converges tightly to the 
 Black-Scholes value, demonstrating the Law of Large Numbers in action.
 
 ### Sensitivity Analysis
-![Price vs Sigma](images/price_vs_sigma.png)
+![Price vs Sigma](price_vs_sigma.png)
 
 Option price rises nearly linearly with volatility. Higher volatility 
 means more uncertainty about the future stock price — and since option 
 payoffs are asymmetric (you benefit from large upward moves but are 
 protected from downside), more uncertainty always increases option value.
 
-![Price vs Strike](images/price_vs_K.png)
+![Price vs Strike](price_vs_K.png)
 
 Option price falls smoothly as the strike price increases. The dashed 
 line marks the current stock price — options to the left are already 
 profitable (in the money), options to the right require the stock to 
 grow before paying out (out of the money).
 
-![Price vs Time](images/price_vs_T.png)
+![Price vs Time](price_vs_T.png)
 
 Option price grows with time to expiry but at a decreasing rate, 
 reflecting the square root of time scaling of uncertainty under 
 Brownian motion.
 
 ### The Greeks
-![Greeks](images/greeks.png)
+![Greeks](greeks.png)
 
 - **Delta** forms an S-curve from 0 to 1, representing how much the 
   option price moves per £1 move in the stock. Also approximates the 
