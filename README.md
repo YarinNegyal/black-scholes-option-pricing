@@ -38,9 +38,9 @@ where $N(\cdot)$ is the cumulative standard normal distribution.
 - Vectorised GBM stock price simulation
 - Monte Carlo option pricer
 - Black-Scholes analytical formula implementation
-- Convergence analysis — Monte Carlo vs Black-Scholes
+- Convergence analysis - Monte Carlo vs Black-Scholes
 - Sensitivity analysis across volatility, strike price, and time
-- The Greeks — Delta, Vega, and Theta
+- The Greeks - Delta, Vega, and Theta
 
 ## Key Results
 
@@ -55,14 +55,14 @@ Black-Scholes value, demonstrating the Law of Large Numbers in action.
 ![Price vs Sigma](price_vs_sigma.png)
 
 Option price rises nearly linearly with volatility. Higher volatility 
-means more uncertainty about the future stock price — and since option 
+means more uncertainty about the future stock price - and since option 
 payoffs are asymmetric (you benefit from large upward moves but are 
 protected from downside), more uncertainty always increases option value.
 
 ![Price vs Strike](price_vs_K.png)
 
 Option price falls smoothly as the strike price increases. The dashed 
-line marks the current stock price — options to the left are already 
+line marks the current stock price - options to the left are already 
 profitable (in the money), options to the right require the stock to 
 grow before paying out (out of the money).
 
@@ -88,7 +88,7 @@ Brownian motion.
 - Geometric Brownian Motion as a model for stock prices
 - Monte Carlo simulation for derivative pricing
 - The Black-Scholes formula and its assumptions
-- Law of Large Numbers — convergence of simulation to theory
+- Law of Large Numbers - convergence of simulation to theory
 - Sensitivity analysis across key parameters
 - The Greeks as measures of risk exposure
 
